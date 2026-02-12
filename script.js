@@ -102,7 +102,7 @@ clickMultBtn.addEventListener('click', function() {
         ownedItems['Multiplier'] == null ? ownedItems['Multiplier'] = 2 : ownedItems['Multiplier']++;
         localStorage.setItem('ownedItems', JSON.stringify(ownedItems));
         update();
-        clickMultBtn.textContent = '2x mult\r\nCosts: ' + getMultiplierCost();
+        clickMultBtn.textContent = '+1x mult\r\nCosts: ' + getMultiplierCost();
     }
     
 });
@@ -110,4 +110,4 @@ clickMultBtn.addEventListener('click', function() {
 update();
 console.log(autoClickerBtn.textContent);
 autoClickerBtn.textContent = 'Autoclicker\r\nCosts: ' + getAutoclickerCost();
-clickMultBtn.textContent = '2x mult\r\nCosts: ' + getMultiplierCost();
+clickMultBtn.textContent = '+1x mult\r\nCosts: ' + getMultiplierCost();
